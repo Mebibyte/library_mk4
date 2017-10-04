@@ -14,7 +14,14 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require_tree ../../../vendor/assets/javascripts
-//= require_tree .
+//= require admin
+//= require attendees
+//= require checkouts
+//= require events
+//= require games
+//= require publishers
+//= require titles
+//= require_self
 
 var bc_regex = /^[a-z0-9]{3,13}$/i;
 

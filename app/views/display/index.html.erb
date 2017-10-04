@@ -1,0 +1,142 @@
+<div id="body-wrapper">
+    <header>
+        <div style="width: 100%; height: 100%;">
+            <div style="float: left; width: 15%; height: 100%;">
+                <div id="pax-logo" data-event="<%= @current_event.short_name %>">
+                    <div id="pax-logo-wrap">
+                        <div id="tabletop-tag" class="pax-tag"></div>
+                    </div>
+                    <div id="logo">
+                        <%= @current_event.short_name.upcase %>
+                    </div>
+                </div>
+                <div id="header-shadow">
+                    <div class="one" data-event="<%= @current_event.short_name %>"></div>
+                    <div class="two"></div>
+                </div>
+            </div>
+            <div id="freeplay-logo"></div>
+        </div>
+    </header>
+    <div style="width:30%; height: 40%; margin: 1%">
+        <div class="box-header" data-event="<%= @current_event.short_name %>">
+            TOP TITLES
+        </div>
+        <div class="content-shadow">
+            <div class="one" data-event="<%= @current_event.short_name %>" style="padding-left: 1%;">
+                <div style="width: 30%;">BOX</div>
+                <div>TITLE</div>
+            </div>
+            <div class="two" style="text-align: right; padding-right: 1%;">Checkouts</div>
+        </div>
+        <div class="box-content">
+            <div id="row-0" class="row">
+                <div class="small-box-art">BOX</div>
+                <div class="game-title">TITLE</div>
+                <div class="checkout-number">##</div>
+            </div>
+            <div id="row-1" class="row">
+                <div class="small-box-art">BOX</div>
+                <div class="game-title">TITLE</div>
+                <div class="checkout-number">##</div>
+            </div>
+            <div id="row-2"class="row">
+                <div class="small-box-art">BOX</div>
+                <div class="game-title">TITLE</div>
+                <div class="checkout-number">##</div>
+            </div>
+            <div id="row-3" class="row">
+                <div class="small-box-art">BOX</div>
+                <div class="game-title">TITLE</div>
+                <div class="checkout-number">##</div>
+            </div>
+            <div id="row-4"class="row">
+                <div class="small-box-art">BOX</div>
+                <div class="game-title">TITLE</div>
+                <div class="checkout-number">##</div>
+            </div>
+        </div>
+    </div>
+    <div style="width:30%; height: 30%; margin: 1%">
+        <div class="box-header" data-event="<%= @current_event.short_name %>" style="font-size: 1.5vh;">
+            LIBRARY STATUS
+        </div>
+        <div class="content-shadow">
+            <div class="one" data-event="<%= @current_event.short_name %>"></div>
+            <div class="two"></div>
+        </div>
+        <div class="box-content">
+            <span id="library-status" style="height: 20%;">
+                THE LIBRARY IS VERY BUSY
+            </span>
+            <div style="height: 40%;">
+                <div id="row-0-col-0" style="float:left; width: 33%;">
+                    <div class="num">
+                        ###
+                    </div>
+                    <div>
+                        Titles
+                    </div>
+                </div>
+                <div id="row-0-col-1" style="float:left; width: 33%;">
+                    <div class="num">
+                        ###
+                    </div>
+                    <div>
+                        Active Checkouts
+                    </div>
+                </div>
+                <div id="row-0-col-2" style="float:left; width: 33%;">
+                    <div class="num">
+                        ###%
+                    </div>
+                    <div>
+                        Checked Out
+                    </div>
+                </div>
+            </div>
+            <div style="height: 40%; clear: both;">
+                <div id="row-1-col-0" style="float:left; width: 33%;">
+                    <div class="num">
+                        ###
+                    </div>
+                    <div>
+                        Titles Played
+                    </div>
+                </div>
+                <div id="row-1-col-1" style="float:left; width: 33%;">
+                    <div class="num">
+                        ###
+                    </div>
+                    <div>
+                        Total Checkouts
+                    </div>
+                </div>
+                <div id="row-1-col-2" style="float:left; width: 33%;">
+                    <div class="num">
+                        ###
+                    </div>
+                    <div>
+                        Hours Played
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sidebar-wrapper" data-event="<%= @current_event.short_name %>">
+    <div id="sidebar-header">
+        <span id="sidebar-text">TWITTER</span>
+    </div>
+    <div id="sidebar-content" style="overflow: hidden;">
+        <a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/TT_HQ?ref_src=twsrc%5Etfw">Tweets by TT_HQ</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!--
+        <div id="sidebar-box-0" class="sidebar-box">
+            Game 1
+        </div>
+        <div id="sidebar-box-1" class="sidebar-box">
+            Game 2
+        </div>
+        -->
+    </div>
+</div>

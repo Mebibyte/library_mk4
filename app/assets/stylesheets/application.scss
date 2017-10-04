@@ -10,7 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require admin.css
+ *= require attendees.css
+ *= require events.css
+ *= require games.css
+ *= require checkouts.css
  *= require_tree ../../../vendor/assets/stylesheets
  *= require_self
  */
@@ -103,6 +107,10 @@ footer.tt-footer {
 .shux-tag {
     background: center url("/assets/shux_logo.png") no-repeat;
     background-size: contain;
+}
+
+.pax-fp-tag {
+    background: asset-url("pax_tabletop_freeplay_tag.png") no-repeat;
 }
 
 header[data-event="prime"], header[data-event="west"] {

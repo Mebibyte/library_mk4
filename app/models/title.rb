@@ -9,6 +9,10 @@ class Title < ActiveRecord::Base
     .order('lower(title) asc')
   end
 
+  #def self.copy_available
+  #  where('id in (select title_id from games where culled = false and game)')
+  #end
+
   def self.search(search)
     search_txt = nil
     search_txt = search.strip.gsub(/\s/, '') if search

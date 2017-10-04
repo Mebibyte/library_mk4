@@ -1,0 +1,433 @@
+/*
+ * This is a manifest file that'll be compiled into display.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #333333;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+ /* BEGIN HEADER */
+
+header {
+    width: 100%;
+    height: 15%;
+}
+
+#tabletop-tag {
+    height: 100%;
+    width: 100%;
+}
+
+#pax-logo-wrap {
+    padding: 5%;
+    height: 75%;
+    width: 100%;
+}
+
+#logo {
+    height: 21%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #fff;
+    text-align: right;
+    padding: 1% 2%;
+    letter-spacing: .04em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 1.6vh;
+}
+
+#pax-logo {
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+#pax-logo[data-event="prime"], #pax-logo[data-event="west"] {
+    background-color: #009DDC;
+    #logo {
+        color: #009DDC;
+    }
+}
+#pax-logo[data-event="east"] {
+    background-color: #CE1D24;
+    #logo {
+        color: #CE1D24;
+    }
+}
+#pax-logo[data-event="south"] {
+    background-color: #CC5500;
+    #logo {
+        color: #CC5500;
+    }
+}
+#pax-logo[data-event="aus"] {
+    background-color: #FBB024;
+    #logo {
+        color: #FBB024;
+    }
+}
+#pax-logo[data-event="dev"] {
+    background-color: #00A192;
+    #logo {
+        color: #00A192;
+    }
+}
+#pax-logo[data-event="setup"] {
+    background-color: #0D0D0D;
+    #logo {
+        color: #0D0D0D;
+    }
+}
+#pax-logo[data-event="unplugged"] {
+    background-color: #91479a;
+    #logo {
+        color: #91479a;
+    }
+}
+
+.pax-tag {
+    background: center asset-url("pax_logo.svg") no-repeat;
+    background-size: contain;
+}
+
+#freeplay-logo {
+    background: asset-url("tabletop_freeplay_tag.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+#header-shadow {
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header-shadow div {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+#header-shadow .one {
+    width: calc(80% + 15px);
+}
+
+#header-shadow .one:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border-right: 30px solid #333;
+    border-top: 30px solid transparent;
+}
+
+#header-shadow .two {
+    background: #333;
+    width: calc(20% - 15px);
+}
+
+#header-shadow .one[data-event="prime"], #header-shadow .one[data-event="west"] {
+    background-color: #005D9C;
+}
+#header-shadow .one[data-event="east"] {
+    background-color: #8E0000;
+}
+#header-shadow .one[data-event="south"] {
+    background-color: #8C1500;
+}
+#header-shadow .one[data-event="aus"] {
+    background-color: #BB7000;
+}
+#header-shadow .one[data-event="dev"] {
+    background-color: #00A192;
+}
+#header-shadow .one[data-event="setup"] {
+    background-color: #0D0D0D;
+}
+#header-shadow .one[data-event="unplugged"] {
+    background-color: #51075A;
+}
+
+/* END HEADER */
+
+/* BEGIN CONTENT */
+
+.content-shadow {
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-shadow div {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+.content-shadow .one {
+    width: calc(65% + 15px);
+    color: #FFF;
+}
+
+.content-shadow .one[data-event="prime"], .content-shadow .one[data-event="west"] {
+    background-color: #005D9C;
+}
+.content-shadow .one[data-event="east"] {
+    background-color: #8E0000;
+}
+.content-shadow .one[data-event="south"] {
+    background-color: #8C1500;
+}
+.content-shadow .one[data-event="aus"] {
+    background-color: #BB7000;
+}
+.content-shadow .one[data-event="dev"] {
+    background-color: #00A192;
+}
+.content-shadow .one[data-event="setup"] {
+    background-color: #0D0D0D;
+}
+.content-shadow .one[data-event="unplugged"] {
+    background-color: #51075A;
+}
+
+.content-shadow .one:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border-right: 30px solid #FFF;
+    border-top: 30px solid transparent;
+}
+
+.content-shadow .two {
+    background: #FFF;
+    width: calc(35% - 15px);
+    color: #333;
+}
+
+#body-wrapper {
+    height: 100%;
+    margin-right: 25%;
+}
+
+.box-header {
+    color: #FFF;
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+}
+
+.box-content {
+    color: #333;
+    background-color: #FFF;
+    height: calc(90% - 30px);
+    width: 100%;
+}
+
+.row {
+    height: 20%;
+    width: 100%;
+    margin: 0;
+}
+
+.box-header[data-event="prime"], .box-header[data-event="west"] {
+    background-color: #009DDC;
+}
+.box-header[data-event="east"] {
+    background-color: #CE1D24;
+}
+.box-header[data-event="south"] {
+    background-color: #CC5500;
+}
+.box-header[data-event="aus"] {
+    background-color: #FBB024;
+}
+.box-header[data-event="dev"] {
+    background-color: #00A192;
+}
+.box-header[data-event="setup"] {
+    background-color: #0D0D0D;
+}
+.box-header[data-event="unplugged"] {
+    background-color: #91479a;
+}
+
+.small-box-art {
+    height: 100%;
+    width: 16%;
+    margin-right: 2%;
+    float: left;
+}
+
+.game-title {
+    width: 60%;
+    float: left;
+}
+
+.checkout-number {
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+/* END CONTENT */
+
+/* BEGIN SIDEBAR */
+
+#sidebar-wrapper {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper[data-event="prime"], #sidebar-wrapper[data-event="west"] {
+    background-color: #009DDC;
+}
+#sidebar-wrapper[data-event="east"] {
+    background-color: #CE1D24;
+}
+#sidebar-wrapper[data-event="south"] {
+    background-color: #CC5500;
+}
+#sidebar-wrapper[data-event="aus"] {
+    background-color: #FBB024;
+}
+#sidebar-wrapper[data-event="dev"] {
+    background-color: #00A192;
+}
+#sidebar-wrapper[data-event="setup"] {
+    background-color: #0D0D0D;
+}
+#sidebar-wrapper[data-event="unplugged"] {
+    background-color: #91479a;
+}
+
+#sidebar-header {
+    color: #FFF;
+    float: left;
+    font-weight: bold;
+    font-size: 2vw;
+    letter-spacing: 0.1em;
+    width: 10%;
+    height: 100%;
+}
+
+#sidebar-text {
+    -webkit-transform: rotate(90deg);   
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+}
+
+#sidebar-content {
+    color: #333;
+    background-color:#FFF;
+    width: 90%;
+    height: 100%;
+    float: left;
+}
+
+.sidebar-box {
+    width: 100%;
+    height: 50%;
+}
+
+/* END SIDEBAR */
+
+footer[data-event="prime"], footer[data-event="west"], .btn-default[data-event="west"] {
+    background-color: #009DDC;
+}
+footer[data-event="east"], .btn-default[data-event="east"]  {
+    background-color: #CE1D24;
+}
+footer[data-event="south"], .btn-default[data-event="south"] {
+    background-color: #CC5500;
+}
+footer[data-event="aus"], .btn-default[data-event="aus"]  {
+    background-color: #FBB024;
+}
+footer[data-event="dev"], .btn-default[data-event="dev"]  {
+    background-color: #00A192;
+}
+footer[data-event="setup"], .btn-default[data-event="setup"]  {
+    background-color: #0D0D0D;
+}
+footer[data-event="unplugged"], .btn-default[data-event="unplugged"]  {
+    background-color: #91479a;
+}
+
+path[data-event="prime"], path[data-event="west"] {
+    fill: #009DDC;
+}
+path[data-event="east"] {
+    fill: #CE1D24;
+}
+path[data-event="south"] {
+    fill: #CC5500;
+}
+path[data-event="aus"] {
+    fill: #FBB024;
+}
+path[data-event="dev"] {
+    fill: #00A192;
+}
+path[data-event="setup"] {
+    fill: #0D0D0D;
+}
+path[data-event="unplugged"] {
+    fill: #91479a;
+}
+
+/* COLORS
+ * PAX West
+ * Primary: #009DDC;
+ * Secondary: #005D9C;
+ * Tertiary: #002A69;
+ *
+ * PAX East
+ * Primary: #CE1D24;
+ * Secondary: #8E0000;
+ * Tertiary: #5B0000;
+ *
+ * PAX South
+ * Primary: #009DDC;
+ * Secondary: #8C1500;
+ * Tertiary: #590000;
+ *
+ * PAX Aus
+ * Primary: #FBB024;
+ * Secondary: #BB7000;
+ * Tertiary: #883D00;
+ *
+ * PAX Unplugged
+ * Primary: #91479a;
+ * Secondary: #51075A;
+ * Tertiary: #1E0027;
+ */
